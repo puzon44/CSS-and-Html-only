@@ -1,0 +1,76 @@
+/* Navigation */
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#navbar ul li{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#navbar ul li a {
+    
+    padding: 10px 0px;
+
+}
+/* home */
+#home{
+    height: 280px;
+}
+
+#home h1{
+    font-size: 2rem;
+    width: 424px;
+}
+
+
+/* services */
+
+#services{
+    flex-direction: column;
+}
+
+#services .box{
+    margin: 19px 78px;
+}
+
+.service-container{
+    height: 1450px;
+}
+
+
+/* sponsor */
+
+
+
+/* contact */
+
+#contact-item {
+    width: 840px;
+    margin: auto;
+}
+
+footer{
+    margin-top: 83px;
+}
+
+.contacts::before {
+    content: "";
+    background: url(contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 75%;
+}
+/* 
+margin-left: 448px;
+    width: 850px; */

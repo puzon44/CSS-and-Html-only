@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:absolute;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 2;
+    top:0;
+    left:0;
+}
+
+/* logo and image */
+#logo{
+    
+    margin: 10px 14px;
+}
+
+#logo img{
+    margin: 0px 4px;
+}
+
+
+/* list */
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    font-size: 1.8rem;
+}
+
+#navbar ul li a{
+    margin: 4px 22px;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    border-radius: 20px;
+    transition: transform 0.2s 0s;
+}
+
+#navbar ul li a:hover{
+    transform: scale(1.15);
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    font-weight: bold;
+
+}
+
+/* Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 180px;
+    height: 674px;
+    /* border: 2px solid red; */
+} 
+
+#home::before{
+    content: "";
+    background: url(back.jpg) no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 97%;
+    opacity: 1;
+    top:0;
+    left:0;
+} 
+
+
+#home .p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6rem;
+    width: 1300px;
+    background-color: rgba(88 88 83 / 70%);
+    border-radius: 25px;
+    padding: 10px 0px;
+
+}
+
+
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: rgba(88 88 83 / 70%);
+    border-radius: 25px;
+    width: 840px;
+    margin: 20px 0px;
+}
+
+
+
+            /* utility class */
+
+
+.h1-pri{
+    font-size: 2.5rem;
+    padding: 20px 0px;
+    color: white;
+    font-size: 3rem;
+    color: #5B84B1FF;
+
+}
+
+
+.btn{
+padding: 10px 10px;
+    margin: 18px 10px;
+    cursor: pointer;
+    background-color: rgb(245 166 22 / 76%);
+    color: black;
+    font-size: 1.25rem;
+    border-radius: 15px;
+}
+
+.center{
+    text-align: center;
+    
+}
+
+.h2-pri{
+    font-size: 1.6rem;
+    margin: 20px 0px;
+}
+
+/* Services */
+
+.service-container{
+    /* background-color: #f5f0e1; */
+    height: 615px;
+    
+}
+
+#services{
+    margin: 30px;
+    display: flex;
+}
+
+#services .box{
+    /* border: 2px solid red; */
+    padding: 28px;
+    margin: 20px 28px;
+    border-radius: 25px;
+    background-color: rgba(166 155 173/ 50%);
+    box-shadow: 8px 12px 24px 2px #a38080;
+   
+    
+}
+
+#services .box img{
+    height: 220px;
+    margin: auto;
+    display: block;
+    border-radius: 25px;
+    
+}
+
+/* Sponsors */
+
+.h1-prim{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    font-size: 2.5rem;
+}
+
+#sponsor-main{
+    height: 470px;
+}
+
+#sponsor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+}
+
+#sponsor-main::before{
+    content: "";
+    background: url(sponsor.jpg) no-repeat center center/cover;
+    height: 66%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.6;
+    box-shadow: 0px 0px 0px 0px red;
+}
+
+#sponsor img{
+    width: 282px;
+    height: 270px;
+    margin: 14px 50px;
+    
+}
+
+#sponsor .sponsor-items{
+
+    padding: 1px;
+    margin: 12px 14px;
+    border-radius: 25px;
+    background-color: rgb(6 6 6 / 39%);
+    box-shadow: 22px 22px 24px 2px #5c4b4b;
+}
+
+/* COntact */
+
+.contacts{
+    height:629px;
+}
+
+#contact-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+    background-color: rgba(166 155 173/ 50%);
+    margin: 0px 344px;
+    padding-top: 11px;
+    border-radius: 50px;
+}
+
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 3.5px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    margin: 4px 0px;
+}
+
+#contact-item form{
+    width: 750px;
+}
+
+.form-group label{
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    margin-top: 90px;
+}
+
+.contacts::before{
+    content: "";
+    background: url(contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.btn1{
+    display: block;
+    width: 110px;
+    margin: auto;
+}
+
+
+    
